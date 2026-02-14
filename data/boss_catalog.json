@@ -1,0 +1,40 @@
+[
+  {
+    "boss": "Araxxi",
+    "drops": [
+      {
+        "name": "Araxxi's Eye",
+        "points": 200
+      },
+      {
+        "name": "Araxxi's Fang",
+        "points": 200
+      },
+      {
+        "name": "Araxxi's Web",
+        "points": 150
+      }
+    ]
+  },
+  {
+    "boss": "Arch-Glacor",
+    "drops": [
+      {
+        "name": "Dark Nilas",
+        "points": 150
+      },
+      {
+        "name": "Scripture of Wen",
+        "points": 300
+      },
+      {
+        "name": "Leng Artefact",
+        "points": 250
+      },
+      {
+        "name": "Frozen core of Leng",
+        "points": 400
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+
+body { background:#0f172a; color:#e5e7eb; font-family:Arial, sans-serif; margin:0; }
+.container { max-width:1200px; margin:40px auto; padding:20px; }
+.topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
+.brand h1 { margin:0; font-size:24px; }
+.sub { font-size:13px; opacity:.7; }
+.card { background:#111827; padding:20px; border-radius:12px; margin-bottom:20px; }
+.btn { background:#2563eb; border:none; padding:8px 14px; border-radius:6px; color:white; cursor:pointer; }
+.btn.secondary { background:#374151; }
+.search input { width:100%; padding:6px 8px; border-radius:6px; border:none; }
+.picker-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.picker-list { background:#0b1220; border-radius:10px; padding:10px; }
+.picker-row:hover { background:#1e293b; }
+.small { font-size:12px; }
+.mono { font-family:monospace; }
+pre { background:#0b1220; padding:15px; border-radius:10px; }

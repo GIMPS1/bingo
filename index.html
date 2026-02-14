@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bingo Builder Demo</title>
+  <link rel="stylesheet" href="./static/rs3.css" />
+  <script src="./static/builder-demo.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="brand">
+        <h1>Bingo Builder (Static Demo)</h1>
+        <div class="sub">Visual boss/drop selector demo — no backend required</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <input id="bossFilter" placeholder="Filter bosses..." />
+        <input id="dropFilter" placeholder="Filter drops..." />
+        <button class="btn secondary" id="clearPicker">Clear</button>
+      </div>
+
+      <div class="picker-grid">
+        <div>
+          <div class="small">Bosses</div>
+          <div id="bossList" class="picker-list" style="height:400px; overflow:auto;"></div>
+        </div>
+        <div>
+          <div class="small">Drops</div>
+          <div id="dropList" class="picker-list" style="height:400px; overflow:auto;"></div>
+        </div>
+      </div>
+
+      <div id="pickerSummary" class="small" style="margin-top:10px;">Loading...</div>
+    </div>
+
+    <div class="card">
+      <h3>Payload Preview</h3>
+      <pre id="payloadOut"></pre>
+    </div>
+  </div>
+
+  <script>
+    fetch("./data/boss_catalog.json")
+      .then(r => r.json())
+      .then(j => {
+        window.BOSS_CATALOG = j;
+        window.dispatchEvent(new Event("boss_catalog_ready"));
+      });
+  </script>
+</body>
+</html>

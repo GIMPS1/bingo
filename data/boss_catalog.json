@@ -1,18 +1,79 @@
 [
   {
-    "boss": "Araxxi",
+    "boss": "Amascut, the Devourer",
+    "drops": [
+      {
+        "name": "Boots of Tumeken's resplendence",
+        "points": 150
+      },
+      {
+        "name": "Devourer's Guard",
+        "points": 200
+      },
+      {
+        "name": "Gloves of Tumeken's resplendence",
+        "points": 150
+      },
+      {
+        "name": "Mask of Tumeken's resplendence",
+        "points": 150
+      },
+      {
+        "name": "Robe bottom of Tumeken's resplendence",
+        "points": 150
+      },
+      {
+        "name": "Robe top of Tumeken's resplendence",
+        "points": 150
+      },
+      {
+        "name": "Shard of Genesis Essence",
+        "points": 150
+      },
+      {
+        "name": "The Devourer's Nexus",
+        "points": 150
+      },
+      {
+        "name": "Total Points Amascut, the Devourer",
+        "points": 0
+      },
+      {
+        "name": "Tumeken's Light",
+        "points": 200
+      }
+    ]
+  },
+  {
+    "boss": "Araxxor",
     "drops": [
       {
         "name": "Araxxi's Eye",
-        "points": 200
+        "points": 80
       },
       {
         "name": "Araxxi's Fang",
-        "points": 200
+        "points": 80
       },
       {
         "name": "Araxxi's Web",
-        "points": 150
+        "points": 80
+      },
+      {
+        "name": "Spider Leg Bottom",
+        "points": 40
+      },
+      {
+        "name": "Spider Leg Middle",
+        "points": 40
+      },
+      {
+        "name": "Spider Leg Top",
+        "points": 40
+      },
+      {
+        "name": "Total Points Araxxi:",
+        "points": 0
       }
     ]
   },
@@ -21,19 +82,1323 @@
     "drops": [
       {
         "name": "Dark Nilas",
-        "points": 150
-      },
-      {
-        "name": "Scripture of Wen",
-        "points": 300
-      },
-      {
-        "name": "Leng Artefact",
-        "points": 250
+        "points": 80
       },
       {
         "name": "Frozen core of Leng",
-        "points": 400
+        "points": 200
+      },
+      {
+        "name": "Leng Artefact",
+        "points": 80
+      },
+      {
+        "name": "Scripture of Wen",
+        "points": 80
+      },
+      {
+        "name": "Total Points Arch-Glacor:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Barrows",
+    "drops": [
+      {
+        "name": "Ahrim's book of magic",
+        "points": 10
+      },
+      {
+        "name": "Ahrim's hood",
+        "points": 10
+      },
+      {
+        "name": "Ahrim's robe skirt",
+        "points": 10
+      },
+      {
+        "name": "Ahrim's robe top",
+        "points": 10
+      },
+      {
+        "name": "Ahrim's staff",
+        "points": 10
+      },
+      {
+        "name": "Ahrim's wand",
+        "points": 10
+      },
+      {
+        "name": "Akrisae's Hood",
+        "points": 10
+      },
+      {
+        "name": "Akrisae's Robe Skirt",
+        "points": 10
+      },
+      {
+        "name": "Akrisae's Robe Top",
+        "points": 10
+      },
+      {
+        "name": "Akrisae's War Mace",
+        "points": 10
+      },
+      {
+        "name": "Dharok's Greataxe",
+        "points": 10
+      },
+      {
+        "name": "Dharok's Helm",
+        "points": 10
+      },
+      {
+        "name": "Dharok's Platebody",
+        "points": 10
+      },
+      {
+        "name": "Dharok's Platelegs",
+        "points": 10
+      },
+      {
+        "name": "Guthan's Chainskirt",
+        "points": 10
+      },
+      {
+        "name": "Guthan's Helm",
+        "points": 10
+      },
+      {
+        "name": "Guthan's Platebody",
+        "points": 10
+      },
+      {
+        "name": "Guthan's Warspear",
+        "points": 10
+      },
+      {
+        "name": "Karil's Coif",
+        "points": 10
+      },
+      {
+        "name": "Karil's Crossbow",
+        "points": 10
+      },
+      {
+        "name": "Karil's Off-hand Pistol Crossbow",
+        "points": 10
+      },
+      {
+        "name": "Karil's Pistol Crossbow",
+        "points": 10
+      },
+      {
+        "name": "Karil's Skirt",
+        "points": 10
+      },
+      {
+        "name": "Karil's Top",
+        "points": 10
+      },
+      {
+        "name": "Linza's Cuirass",
+        "points": 30
+      },
+      {
+        "name": "Linza's Greaves",
+        "points": 30
+      },
+      {
+        "name": "Linza's Hammer",
+        "points": 30
+      },
+      {
+        "name": "Linza's Helm",
+        "points": 30
+      },
+      {
+        "name": "Linza's Shield",
+        "points": 30
+      },
+      {
+        "name": "Torag's Hammer",
+        "points": 10
+      },
+      {
+        "name": "Torag's Helm",
+        "points": 10
+      },
+      {
+        "name": "Torag's Platebody",
+        "points": 10
+      },
+      {
+        "name": "Torag's Platelegs",
+        "points": 10
+      },
+      {
+        "name": "Total Points Barrows:",
+        "points": 0
+      },
+      {
+        "name": "Verac's Brassard",
+        "points": 10
+      },
+      {
+        "name": "Verac's Flail",
+        "points": 10
+      },
+      {
+        "name": "Verac's Helm",
+        "points": 10
+      },
+      {
+        "name": "Verac's Plateskirt",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "boss": "Barrows Rise of the Six",
+    "drops": [
+      {
+        "name": "400 Malevolent energy",
+        "points": 100
+      },
+      {
+        "name": "Malevolent Kiteshield",
+        "points": 80
+      },
+      {
+        "name": "Merciless Kiteshield",
+        "points": 80
+      },
+      {
+        "name": "Total Points Barrows Rise of the Six:",
+        "points": 0
+      },
+      {
+        "name": "Vengeful Kiteshield",
+        "points": 80
+      }
+    ]
+  },
+  {
+    "boss": "Commander Zilyana",
+    "drops": [
+      {
+        "name": "Armadyl Crossbow",
+        "points": 20
+      },
+      {
+        "name": "Off-hand Armadyl Crossbow",
+        "points": 20
+      },
+      {
+        "name": "Saradomin Hilt",
+        "points": 20
+      },
+      {
+        "name": "Saradomin Sword",
+        "points": 20
+      },
+      {
+        "name": "Saradomin's hiss",
+        "points": 20
+      },
+      {
+        "name": "Saradomin's murmur",
+        "points": 20
+      },
+      {
+        "name": "Saradomin's whisper",
+        "points": 20
+      },
+      {
+        "name": "Total Points Commander Zilyana:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Corporeal Beast",
+    "drops": [
+      {
+        "name": "Arcane Sigil",
+        "points": 150
+      },
+      {
+        "name": "Divine Sigil",
+        "points": 150
+      },
+      {
+        "name": "Elysian Sigil",
+        "points": 150
+      },
+      {
+        "name": "Spectral Sigil",
+        "points": 100
+      },
+      {
+        "name": "Total Points Corporeal Beast:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Croesus",
+    "drops": [
+      {
+        "name": "Croesus Foultorch",
+        "points": 120
+      },
+      {
+        "name": "Croesus spore sack",
+        "points": 120
+      },
+      {
+        "name": "Croesus Sporehammer",
+        "points": 120
+      },
+      {
+        "name": "Cryptbloom boots (incomplete)",
+        "points": 120
+      },
+      {
+        "name": "Cryptbloom bottoms (incomplete)",
+        "points": 120
+      },
+      {
+        "name": "Cryptbloom gloves (incomplete)",
+        "points": 120
+      },
+      {
+        "name": "Cryptbloom helm (incomplete)",
+        "points": 120
+      },
+      {
+        "name": "Cryptbloom top (incomplete)",
+        "points": 120
+      },
+      {
+        "name": "Scripture of Bik",
+        "points": 120
+      },
+      {
+        "name": "Total Points Croesus:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Dagannoth Kings",
+    "drops": [
+      {
+        "name": "Archers' Ring",
+        "points": 10
+      },
+      {
+        "name": "Berserker Ring",
+        "points": 10
+      },
+      {
+        "name": "Dragon Hatchet",
+        "points": 10
+      },
+      {
+        "name": "Mud Battlestaff",
+        "points": 10
+      },
+      {
+        "name": "Seercull",
+        "points": 10
+      },
+      {
+        "name": "Seers' Ring",
+        "points": 10
+      },
+      {
+        "name": "Total Points Dagannoth Kings:",
+        "points": 0
+      },
+      {
+        "name": "Warrior ring",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "boss": "Dormant Anima Core",
+    "drops": [
+      {
+        "name": "Dormant Anima Core Body",
+        "points": 15
+      },
+      {
+        "name": "Dormant Anima Core Helm",
+        "points": 15
+      },
+      {
+        "name": "Dormant Anima Core Legs",
+        "points": 15
+      },
+      {
+        "name": "Total Points Dormant Anima Core:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Dragonkin Laboratory",
+    "drops": [
+      {
+        "name": "400 Draconic Energy",
+        "points": 150
+      },
+      {
+        "name": "Greater Barge ability codex",
+        "points": 120
+      },
+      {
+        "name": "Greater Flurry ability codex",
+        "points": 80
+      },
+      {
+        "name": "Greater Fury ability codex",
+        "points": 100
+      },
+      {
+        "name": "Total Points Dragonkin Laboratory:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Flesh hatcher Mhekarnahz",
+    "drops": [
+      {
+        "name": "Dragon harpoon",
+        "points": 10
+      },
+      {
+        "name": "Stalker's charm",
+        "points": 10
+      },
+      {
+        "name": "Total Points Flesh-hatcher Mhekarnahz",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "General Graardor",
+    "drops": [
+      {
+        "name": "Bandos Boots",
+        "points": 20
+      },
+      {
+        "name": "Bandos Chestplate",
+        "points": 20
+      },
+      {
+        "name": "Bandos Gloves",
+        "points": 20
+      },
+      {
+        "name": "Bandos Helmet",
+        "points": 20
+      },
+      {
+        "name": "Bandos Hilt",
+        "points": 20
+      },
+      {
+        "name": "Bandos Tassets",
+        "points": 20
+      },
+      {
+        "name": "Bandos Warshield",
+        "points": 20
+      },
+      {
+        "name": "Total Points General Graardor:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Giant Mole",
+    "drops": [
+      {
+        "name": "Clingy Mole",
+        "points": 20
+      },
+      {
+        "name": "Total Points Giant Mole:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Gregorovic",
+    "drops": [
+      {
+        "name": "Crest of Sliske",
+        "points": 40
+      },
+      {
+        "name": "Off-hand Shadow Glaive",
+        "points": 40
+      },
+      {
+        "name": "Shadow Glaive",
+        "points": 40
+      },
+      {
+        "name": "Sliskean Essence",
+        "points": 10
+      },
+      {
+        "name": "Total Points Gregorovic:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Helwyr",
+    "drops": [
+      {
+        "name": "Crest of Seren",
+        "points": 40
+      },
+      {
+        "name": "Orb of the Cywir Elders",
+        "points": 40
+      },
+      {
+        "name": "Serenic Essence",
+        "points": 10
+      },
+      {
+        "name": "Total Points Helwyr:",
+        "points": 0
+      },
+      {
+        "name": "Wand of the Cywir Elders",
+        "points": 40
+      }
+    ]
+  },
+  {
+    "boss": "k'ril Tsutsaroth",
+    "drops": [
+      {
+        "name": "Boots of Subjugation",
+        "points": 20
+      },
+      {
+        "name": "Garb of Subjugation",
+        "points": 20
+      },
+      {
+        "name": "Gloves of Subjugation",
+        "points": 20
+      },
+      {
+        "name": "Gown of Subjugation",
+        "points": 20
+      },
+      {
+        "name": "Hood of Subjugation",
+        "points": 20
+      },
+      {
+        "name": "Steam Battlestaff",
+        "points": 20
+      },
+      {
+        "name": "Total Points k'ril Tsutsaroth:",
+        "points": 0
+      },
+      {
+        "name": "Ward of Subjugation",
+        "points": 20
+      },
+      {
+        "name": "Zamorak Hilt",
+        "points": 20
+      },
+      {
+        "name": "Zamorakian Spear",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "boss": "Kalphite King",
+    "drops": [
+      {
+        "name": "Drygore Longsword",
+        "points": 40
+      },
+      {
+        "name": "Drygore Mace",
+        "points": 40
+      },
+      {
+        "name": "Drygore Rapier",
+        "points": 40
+      },
+      {
+        "name": "Off-hand Drygore Longsword",
+        "points": 40
+      },
+      {
+        "name": "Off-hand Drygore Mace",
+        "points": 40
+      },
+      {
+        "name": "Off-hand Drygore Rapier",
+        "points": 40
+      },
+      {
+        "name": "Total Points Kalphite King:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Kerapac",
+    "drops": [
+      {
+        "name": "Fractured Armadyl Symbol",
+        "points": 120
+      },
+      {
+        "name": "Fractured Stabilisation Gem",
+        "points": 120
+      },
+      {
+        "name": "Greater Concentrated blast ability codex",
+        "points": 80
+      },
+      {
+        "name": "Kerapac's wrist wraps",
+        "points": 80
+      },
+      {
+        "name": "Scripture of Jas",
+        "points": 80
+      },
+      {
+        "name": "Staff of Armadyl's Fractured Shaft",
+        "points": 120
+      },
+      {
+        "name": "Total Points Kerapac:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Kree'arra",
+    "drops": [
+      {
+        "name": "Armadyl Boots",
+        "points": 20
+      },
+      {
+        "name": "Armadyl Buckler",
+        "points": 20
+      },
+      {
+        "name": "Armadyl Chainskirt",
+        "points": 20
+      },
+      {
+        "name": "Armadyl Chestplate",
+        "points": 20
+      },
+      {
+        "name": "Armadyl Gloves",
+        "points": 20
+      },
+      {
+        "name": "Armadyl Helmet",
+        "points": 20
+      },
+      {
+        "name": "Armadyl Hilt",
+        "points": 20
+      },
+      {
+        "name": "Total Points Kree'arra:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Liberation of Mazcab",
+    "drops": [
+      {
+        "name": "Achto Primeval Boots",
+        "points": 40
+      },
+      {
+        "name": "Achto Primeval Gloves",
+        "points": 40
+      },
+      {
+        "name": "Achto Primeval Mask",
+        "points": 40
+      },
+      {
+        "name": "Achto Primeval Robe Legs",
+        "points": 40
+      },
+      {
+        "name": "Achto Primeval Robe Top",
+        "points": 40
+      },
+      {
+        "name": "Achto Tempest Body",
+        "points": 40
+      },
+      {
+        "name": "Achto Tempest Boots",
+        "points": 40
+      },
+      {
+        "name": "Achto Tempest Chaps",
+        "points": 40
+      },
+      {
+        "name": "Achto Tempest Cowl",
+        "points": 40
+      },
+      {
+        "name": "Achto Tempest Gloves",
+        "points": 40
+      },
+      {
+        "name": "Achto Teralith Boots",
+        "points": 40
+      },
+      {
+        "name": "Achto Teralith Cuirass",
+        "points": 40
+      },
+      {
+        "name": "Achto Teralith Gauntlets",
+        "points": 40
+      },
+      {
+        "name": "Achto Teralith Helmet",
+        "points": 40
+      },
+      {
+        "name": "Achto Teralith Leggings",
+        "points": 40
+      },
+      {
+        "name": "Mazcab Ability Codex",
+        "points": 30
+      },
+      {
+        "name": "Razorback Gauntlets",
+        "points": 50
+      },
+      {
+        "name": "Total Points Liberation of Mazcab:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Nex",
+    "drops": [
+      {
+        "name": "Pernix Body",
+        "points": 30
+      },
+      {
+        "name": "Pernix Boots",
+        "points": 30
+      },
+      {
+        "name": "Pernix Chaps",
+        "points": 30
+      },
+      {
+        "name": "Pernix Cowl",
+        "points": 30
+      },
+      {
+        "name": "Pernix Gloves",
+        "points": 30
+      },
+      {
+        "name": "Torva Boots",
+        "points": 30
+      },
+      {
+        "name": "Torva Full Helm",
+        "points": 30
+      },
+      {
+        "name": "Torva Gloves",
+        "points": 30
+      },
+      {
+        "name": "Torva Platebody",
+        "points": 30
+      },
+      {
+        "name": "Torva Platelegs",
+        "points": 30
+      },
+      {
+        "name": "Total Points Nex:",
+        "points": 0
+      },
+      {
+        "name": "Virtus Book",
+        "points": 30
+      },
+      {
+        "name": "Virtus Boots",
+        "points": 30
+      },
+      {
+        "name": "Virtus Gloves",
+        "points": 30
+      },
+      {
+        "name": "Virtus Mask",
+        "points": 30
+      },
+      {
+        "name": "Virtus Robe Legs",
+        "points": 30
+      },
+      {
+        "name": "Virtus Robe Top",
+        "points": 30
+      },
+      {
+        "name": "Virtus Wand",
+        "points": 30
+      },
+      {
+        "name": "Zaryte Bow",
+        "points": 30
+      }
+    ]
+  },
+  {
+    "boss": "Nex: Angel of Death",
+    "drops": [
+      {
+        "name": "Imperium Core",
+        "points": 200
+      },
+      {
+        "name": "Intricate blood stained chest",
+        "points": 200
+      },
+      {
+        "name": "Intricate ice chest",
+        "points": 200
+      },
+      {
+        "name": "Intricate shadow chest",
+        "points": 200
+      },
+      {
+        "name": "Intricate smoke-shrouded chest",
+        "points": 200
+      },
+      {
+        "name": "Praesul Codex",
+        "points": 150
+      },
+      {
+        "name": "Total Points Nex: Angel of Death:",
+        "points": 0
+      },
+      {
+        "name": "Wand of the Praesul",
+        "points": 200
+      }
+    ]
+  },
+  {
+    "boss": "Queen Black Dragon",
+    "drops": [
+      {
+        "name": "Dragonbone Upgrade Kit",
+        "points": 30
+      },
+      {
+        "name": "Royal Bolt Stabiliser",
+        "points": 20
+      },
+      {
+        "name": "Royal Frame",
+        "points": 20
+      },
+      {
+        "name": "Royal Sight",
+        "points": 20
+      },
+      {
+        "name": "Royal Torsion Spring",
+        "points": 20
+      },
+      {
+        "name": "Total Points Queen Black Dragon:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Raksha, the Shadow Colossus",
+    "drops": [
+      {
+        "name": "Divert Ability Codex",
+        "points": 100
+      },
+      {
+        "name": "Fleeting Boots",
+        "points": 50
+      },
+      {
+        "name": "Greater Chain Ability Codex",
+        "points": 100
+      },
+      {
+        "name": "Greater Ricochet Ability Codex",
+        "points": 100
+      },
+      {
+        "name": "Shadow Spike",
+        "points": 100
+      },
+      {
+        "name": "Total Points Raksha, the Shadow Colossus",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Rasial, the First Necromancer",
+    "drops": [
+      {
+        "name": "Crown of the First Necromancer",
+        "points": 80
+      },
+      {
+        "name": "Foot Wraps of the First Necromancer",
+        "points": 80
+      },
+      {
+        "name": "Hand Wrap of the First Necromancer",
+        "points": 80
+      },
+      {
+        "name": "Omni Guard",
+        "points": 100
+      },
+      {
+        "name": "Robe Bottom of the First Necromancer",
+        "points": 80
+      },
+      {
+        "name": "Robe Top of the First Necromancer",
+        "points": 80
+      },
+      {
+        "name": "Soulbound Lantern",
+        "points": 100
+      },
+      {
+        "name": "Total Points Rasial, the First Necromancer:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Rex Matriarchs",
+    "drops": [
+      {
+        "name": "Heart of the Archer",
+        "points": 40
+      },
+      {
+        "name": "Heart of the Berserker",
+        "points": 20
+      },
+      {
+        "name": "Heart of the Seer",
+        "points": 40
+      },
+      {
+        "name": "Heart of the Warrior",
+        "points": 40
+      },
+      {
+        "name": "Jail Cell key",
+        "points": 50
+      },
+      {
+        "name": "Occultist's Ring",
+        "points": 40
+      },
+      {
+        "name": "Savage Plume",
+        "points": 30
+      },
+      {
+        "name": "Savage Spear Cap",
+        "points": 30
+      },
+      {
+        "name": "Savage Spear Shaft",
+        "points": 30
+      },
+      {
+        "name": "Savage Spear Tip",
+        "points": 30
+      },
+      {
+        "name": "Total Points Rex Matriarchs:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Sanctum of Rebirth",
+    "drops": [
+      {
+        "name": "Divine Rage Prayer Codex",
+        "points": 60
+      },
+      {
+        "name": "Ode to Deceit",
+        "points": 120
+      },
+      {
+        "name": "Roar of Awakening",
+        "points": 120
+      },
+      {
+        "name": "Scripture of Amascut",
+        "points": 60
+      },
+      {
+        "name": "Shard of Genesis Essence",
+        "points": 150
+      },
+      {
+        "name": "Total Points Sanctum of Rebirth",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Solak",
+    "drops": [
+      {
+        "name": "Blightbound Crossbow",
+        "points": 150
+      },
+      {
+        "name": "Erethdor's Grimoire",
+        "points": 150
+      },
+      {
+        "name": "Off-hand Blightbound Crossbow",
+        "points": 150
+      },
+      {
+        "name": "Total Points Solak:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Telos",
+    "drops": [
+      {
+        "name": "Dormant Seren Godbow",
+        "points": 120
+      },
+      {
+        "name": "Dormant Staff of Sliske",
+        "points": 120
+      },
+      {
+        "name": "Dormant Zaros Godsword",
+        "points": 120
+      },
+      {
+        "name": "Orb of Corrupted Anima",
+        "points": 80
+      },
+      {
+        "name": "Orb of Pure Anima",
+        "points": 80
+      },
+      {
+        "name": "Orb of Volcanic Anima",
+        "points": 80
+      },
+      {
+        "name": "Reprisal Ability Codex",
+        "points": 120
+      },
+      {
+        "name": "Total Points Telos:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Temple of Aminishi",
+    "drops": [
+      {
+        "name": "400 Ancient Scales",
+        "points": 150
+      },
+      {
+        "name": "Fishy treat",
+        "points": 30
+      },
+      {
+        "name": "Masuta's warspear",
+        "points": 60
+      },
+      {
+        "name": "Total Points Temple of Aminishi:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "The Gate of Elidinis",
+    "drops": [
+      {
+        "name": "Eclipsed Soul Prayer Codex",
+        "points": 120
+      },
+      {
+        "name": "Latent Offering",
+        "points": 20
+      },
+      {
+        "name": "Memory Dowser",
+        "points": 120
+      },
+      {
+        "name": "Runic Attuner",
+        "points": 120
+      },
+      {
+        "name": "Scripture of Elidinis",
+        "points": 120
+      },
+      {
+        "name": "Total Points The Gate of Elidinis:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "The Shadow Reef",
+    "drops": [
+      {
+        "name": "100 Black Stone Heart",
+        "points": 100
+      },
+      {
+        "name": "Eldrich Crossbow Stock",
+        "points": 150
+      },
+      {
+        "name": "Eldritch Crossbow limb",
+        "points": 150
+      },
+      {
+        "name": "Eldritch Crossbow Mechanism",
+        "points": 150
+      },
+      {
+        "name": "Total Points The Shadow Reef:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Twin Furies",
+    "drops": [
+      {
+        "name": "Blade of Avaryss",
+        "points": 40
+      },
+      {
+        "name": "Blade of Nymora",
+        "points": 40
+      },
+      {
+        "name": "Crest of Zamorak",
+        "points": 40
+      },
+      {
+        "name": "Total Points Twin Furies:",
+        "points": 0
+      },
+      {
+        "name": "Zamorakian Essence",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "boss": "Tzkal-Zuk",
+    "drops": [
+      {
+        "name": "Ancient Hilt",
+        "points": 150
+      },
+      {
+        "name": "Magma Core",
+        "points": 150
+      },
+      {
+        "name": "Magma Tempest ability codex",
+        "points": 100
+      },
+      {
+        "name": "Obsidian Blade",
+        "points": 150
+      },
+      {
+        "name": "Scripture of Ful",
+        "points": 100
+      },
+      {
+        "name": "Total Points Tzkal-Zuk:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Vindicta",
+    "drops": [
+      {
+        "name": "Crest of Zaros",
+        "points": 40
+      },
+      {
+        "name": "Dragon Rider Lance",
+        "points": 40
+      },
+      {
+        "name": "Total Points Vindicta:",
+        "points": 0
+      },
+      {
+        "name": "Zarosian Essence",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "boss": "Vorago",
+    "drops": [
+      {
+        "name": "300 Tectonic Energy",
+        "points": 100
+      },
+      {
+        "name": "Seismic Singularity",
+        "points": 150
+      },
+      {
+        "name": "Seismic Wand",
+        "points": 150
+      },
+      {
+        "name": "Total Points Vorago:",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "boss": "Zamorak, Lord of Chaos",
+    "drops": [
+      {
+        "name": "Bottom of the Last Guardian's bow",
+        "points": 150
+      },
+      {
+        "name": "Chaos Roar Ability Codex",
+        "points": 120
+      },
+      {
+        "name": "Codex of Lost Knowledge",
+        "points": 50
+      },
+      {
+        "name": "Divine Bowstring",
+        "points": 150
+      },
+      {
+        "name": "Top of the Last Guardian's bow",
+        "points": 150
+      },
+      {
+        "name": "Total Points Zamorak, Lord of Chaos",
+        "points": 0
+      },
+      {
+        "name": "Vestments of havoc boots",
+        "points": 100
+      },
+      {
+        "name": "Vestments of havoc hood",
+        "points": 100
+      },
+      {
+        "name": "Vestments of havoc robe bottom",
+        "points": 100
+      },
+      {
+        "name": "Vestments of havoc robe top",
+        "points": 100
+      }
+    ]
+  },
+  {
+    "boss": "Zemouregal & Vorkath",
+    "drops": [
+      {
+        "name": "100 Vorkath's Spike",
+        "points": 150
+      },
+      {
+        "name": "Invoke Lord of Bones Incantation Codex",
+        "points": 150
+      },
+      {
+        "name": "Total Points Zemouregal & Vorkath",
+        "points": 0
+      },
+      {
+        "name": "Vorkath's Scale",
+        "points": 150
       }
     ]
   }

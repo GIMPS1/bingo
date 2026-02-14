@@ -1,55 +1,163 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bingo Builder Demo</title>
-  <link rel="stylesheet" href="./static/rs3.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create Bingo (Static Demo)</title>
+  <link rel="stylesheet" href="./static/rs3.css">
+  <script src="./static/app-demo.js" defer></script>
   <script src="./static/builder-demo.js" defer></script>
 </head>
 <body>
   <div class="container">
     <div class="topbar">
       <div class="brand">
-        <h1>Bingo Builder (Static Demo)</h1>
-        <div class="sub">Visual boss/drop selector demo — no backend required</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div style="display:flex; gap:10px; margin-bottom:10px;">
-        <input id="bossFilter" placeholder="Filter bosses..." />
-        <input id="dropFilter" placeholder="Filter drops..." />
-        <button class="btn secondary" id="clearPicker">Clear</button>
-      </div>
-
-      <div class="picker-grid">
-        <div>
-          <div class="small">Bosses</div>
-          <div id="bossList" class="picker-list" style="height:400px; overflow:auto;"></div>
-        </div>
-        <div>
-          <div class="small">Drops</div>
-          <div id="dropList" class="picker-list" style="height:400px; overflow:auto;"></div>
+        <div class="logo" aria-hidden="true"></div>
+        <div class="title">
+          <h1>Create Bingo (Static Demo)</h1>
+          <div class="sub">Exact visual clone of your create page. Selector + icons work. No backend.</div>
         </div>
       </div>
-
-      <div id="pickerSummary" class="small" style="margin-top:10px;">Loading...</div>
+      <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+        <a class="btn secondary" href="#" data-deadlink>All bingos</a>
+        <a class="btn secondary" href="#" data-deadlink>Create</a>
+        <a class="btn secondary" href="#" data-deadlink>Updates</a>
+        <a class="btn secondary" href="#" data-deadlink>Justification</a>
+        <a class="btn secondary" href="#" data-deadlink>Better API mapping</a>
+        <a class="btn secondary" href="#" data-deadlink>Admin</a>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Payload Preview</h3>
-      <pre id="payloadOut"></pre>
-    </div>
+    <form id="builder-form">
+      <div class="card" style="margin-bottom:14px;">
+        <div class="head">
+          <h2>Bingo details</h2>
+          <div class="kpi">
+            <span class="badge">New</span>
+            <span class="small">Static demo (no save / no DB)</span>
+          </div>
+        </div>
+        <div class="body">
+          <label class="small" style="display:block; margin-bottom:6px;">Bingo name</label>
+          <input name="bingo_name" value="Iron Rivals Week 3" placeholder="e.g. Iron Rivals Week 3" style="max-width:520px;">
+          <p class="small" style="margin-top:10px; color:rgba(147,164,182,.95)">Buttons are intentionally disabled in this demo.</p>
+        </div>
+      </div>
+
+      <input type="hidden" name="payload" id="payload" value="">
+
+      <div class="grid" style="grid-template-columns: 1.2fr .8fr;">
+        <div class="card">
+          <div class="head">
+            <h2>1) Teams & rosters</h2>
+            <div class="kpi">
+              <span class="badge">Tip</span>
+              <span class="small">Add as many teams as you want. Team IDs will be 1..N.</span>
+            </div>
+          </div>
+          <div class="body">
+            <div id="teams"></div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+              <button type="button" class="btn" id="add-team">+ Add team</button>
+              <button type="button" class="btn secondary" id="add-3-teams">Quick add 3 teams</button>
+            </div>
+            <p class="small" style="margin-top:10px;">Roster is optional — stored for future features.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="head">
+            <h2>Set bonuses (automatic)</h2>
+            <div class="badge">Rule</div>
+          </div>
+          <div class="body">
+            <p class="small" style="margin-top:0;">
+              In the real app, selecting drops for a boss creates an automatic <span class="mono">set bonus</span> tile.
+              This demo shows the same selection UX, and outputs a payload preview.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <div class="head">
+          <h2>2) Boss drops</h2>
+          <div class="kpi">
+            <span class="badge">Boss-specific</span>
+            <span class="small">Filter bosses, tick bosses + drops. Icons load from RuneScape Wiki.</span>
+          </div>
+        </div>
+
+        <div class="body">
+          <div class="card" style="border-radius:16px; border-color: rgba(255,255,255,.10);">
+            <div class="head">
+              <h3 style="margin:0; font-size:16px;">Visual tile picker</h3>
+              <div class="kpi">
+                <span class="badge">Icons + filters</span>
+                <span class="small">Tick what you want — payload preview updates live.</span>
+              </div>
+            </div>
+
+            <div class="body" style="display:grid; gap:12px;">
+              <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+                <div class="search" style="flex:1; min-width:220px;">
+                  <span class="mono" style="color:rgba(214,178,94,.9)">/</span>
+                  <input id="bossFilter" placeholder="Filter bosses… (e.g. ras)" autocomplete="off">
+                </div>
+                <div class="search" style="flex:1; min-width:220px;">
+                  <span class="mono" style="color:rgba(214,178,94,.9)">/</span>
+                  <input id="dropFilter" placeholder="Filter drops… (optional)" autocomplete="off">
+                </div>
+                <button type="button" class="btn secondary" id="clearPicker">Clear</button>
+              </div>
+
+              <div class="picker-grid">
+                <div class="picker-col">
+                  <div class="small" style="margin:0 0 8px;">Bosses</div>
+                  <div id="bossList" class="picker-list" style="height:420px; overflow:auto;"></div>
+                </div>
+                <div class="picker-col">
+                  <div class="small" style="margin:0 0 8px;">Drops (for selected bosses)</div>
+                  <div id="dropList" class="picker-list" style="height:420px; overflow:auto;"></div>
+                </div>
+              </div>
+
+              <div class="small" id="pickerSummary" style="color:rgba(147,164,182,.95)">
+                Loading boss catalog…
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border-radius:16px; border-color: rgba(255,255,255,.10); margin-top:12px;">
+            <div class="head">
+              <h3 style="margin:0; font-size:16px;">Payload preview</h3>
+              <div class="kpi">
+                <span class="badge">Demo output</span>
+                <span class="small">What would be posted to your backend (illustrative)</span>
+              </div>
+            </div>
+            <div class="body">
+              <pre id="payloadPreview" class="mono" style="white-space:pre-wrap; margin:0; max-height:260px; overflow:auto;"></pre>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+        <button type="button" class="btn" id="save" data-deadbutton>Save bingo</button>
+        <a class="btn secondary" href="#" data-deadlink>Cancel</a>
+        <span class="small" style="align-self:center; color:rgba(255,210,140,.9)">Demo only — buttons disabled.</span>
+      </div>
+    </form>
+
   </div>
 
   <script>
     fetch("./data/boss_catalog.json")
       .then(r => r.json())
-      .then(j => {
-        window.BOSS_CATALOG = j;
-        window.dispatchEvent(new Event("boss_catalog_ready"));
-      });
+      .then(j => { window.BOSS_CATALOG = j; window.dispatchEvent(new Event("boss_catalog_ready")); })
+      .catch(() => { document.getElementById("pickerSummary").textContent = "Failed to load boss catalog JSON."; });
   </script>
 </body>
 </html>

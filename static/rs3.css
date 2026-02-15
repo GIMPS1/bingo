@@ -399,3 +399,39 @@ body::-webkit-scrollbar {
   background: linear-gradient(180deg, rgba(17,26,36,.95), rgba(14,20,29,.92));
   backdrop-filter: blur(10px);
 }
+/* ============================= */
+/* Themed Scrollbars (Picker)    */
+/* ============================= */
+
+.picker-list {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(214,178,94,.6) rgba(255,255,255,.05);
+}
+
+/* WebKit (Chrome / Edge) */
+.picker-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.picker-list::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.04);
+  border-radius: 10px;
+}
+
+.picker-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(214,178,94,.85),
+    rgba(214,178,94,.55)
+  );
+  border-radius: 10px;
+  border: 2px solid rgba(12,18,32,.9); /* inset effect */
+}
+
+.picker-list::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(214,178,94,1),
+    rgba(214,178,94,.75)
+  );
+}

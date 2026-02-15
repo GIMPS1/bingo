@@ -1,4 +1,3 @@
-
 (() => {
   const $ = (q, el=document) => el.querySelector(q);
   const $$ = (q, el=document) => Array.from(el.querySelectorAll(q));
@@ -32,8 +31,9 @@
   function initTeams() {
     const teams = $("#teams");
     if (!teams) return;
-    // seed 3 teams
-    for (let i=1;i<=3;i++) teams.appendChild(makeTeamCard(i));
+    if (teams.childElementCount === 0) {
+      for (let i=1;i<=3;i++) teams.appendChild(makeTeamCard(i));
+    }
 
     $("#add-team")?.addEventListener("click", () => {
       const n = $$("#teams .card").length + 1;
@@ -80,11 +80,6 @@
   };
 
   function norm(s){ return String(s ?? "").toLowerCase(); }
-  function esc(s){
-    return String(s ?? "")
-      .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
-      .replaceAll('"',"&quot;").replaceAll("'","&#039;");
-  }
 
   function getCatalog() {
     const raw = window.BOSS_CATALOG;
@@ -98,7 +93,7 @@
   function renderSummary() {
     const s = $("#pickerSummary");
     if (!s) return;
-    s.textContent = `${state.selectedBosses.size} boss(es) selected • ${state.selectedDrops.size} drop(s) selected.`;
+    s.textContent = `Selected: ${state.selectedBosses.size} boss(es), ${state.selectedDrops.size} drop(s).`;
   }
 
   function renderPayloadPreview() {
@@ -136,6 +131,9 @@
     for (const b of bosses) {
       if (q && !norm(b).includes(q)) continue;
       shown++;
+
+      const dropCount = (catalog.find(x => x.boss === b)?.drops || []).length;
+
       const row = document.createElement("label");
       row.className = "picker-row";
       row.style.cursor = "pointer";
@@ -159,7 +157,7 @@
       count.className = "mono";
       count.style.opacity = ".8";
       count.style.fontSize = "12px";
-      const dropCount = (catalog.find(x => x.boss === b)?.drops || []).length;
+      count.style.marginLeft = "auto";
       count.textContent = String(dropCount);
 
       cb.addEventListener("change", () => {
@@ -232,6 +230,7 @@
         anyShown++;
 
         const key = `${boss}||${name}`;
+
         const row = document.createElement("label");
         row.className = "picker-row";
         row.style.cursor = "pointer";
@@ -253,17 +252,13 @@
           renderPayloadPreview();
         });
 
-        const iconWrap = document.createElement("div");
-        iconWrap.className = "picker-icon";
         const img = document.createElement("img");
         img.alt = "";
         img.loading = "lazy";
         img.style.width = "22px";
         img.style.height = "22px";
         img.style.borderRadius = "6px";
-        iconWrap.appendChild(img);
 
-        // async icon
         getIconUrl(name, 56).then(url => {
           if (url) img.src = url;
           else img.style.display = "none";
@@ -277,7 +272,7 @@
         pill.className = "pillpts";
         pill.textContent = `${points} pts`;
 
-        row.append(cb, iconWrap, pname, pill);
+        row.append(cb, img, pname, pill);
         frag.appendChild(row);
       }
 
@@ -310,13 +305,27 @@
     });
   }
 
-  window.addEventListener("boss_catalog_ready", async () => {
+  function start() {
     initTeams();
     const catalog = getCatalog();
+    const summary = $("#pickerSummary");
+    if (!catalog.length) {
+      if (summary) summary.textContent = "Boss catalog is empty or failed to load.";
+      return;
+    }
     renderBossList(catalog);
-    await renderDropList(catalog);
+    renderDropList(catalog);
     renderSummary();
     renderPayloadPreview();
     bindPicker(catalog);
+  }
+
+  // Handshake: boss_catalog.js will call this
+  window.__BOSS_CATALOG_READY = start;
+
+  // Fallbacks: if catalog already present, start immediately; otherwise wait for event
+  document.addEventListener("DOMContentLoaded", () => {
+    if (Array.isArray(window.BOSS_CATALOG) && window.BOSS_CATALOG.length) start();
   });
+  window.addEventListener("boss_catalog_ready", () => start());
 })();
